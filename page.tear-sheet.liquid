@@ -131,10 +131,10 @@
       const sheetTitle = localStorage.getItem(sheetTitleId)
       console.log(sheetTitle)
 
-//     // GET DESCRIPTION
-//       const sheetDescId = prodId + "description";
-//       const sheetDesc = localStorage.getItem(sheetDescId)
-//       console.log(sheetDesc)
+     // GET DESCRIPTION
+       const sheetDescId = prodId + "description";
+       const sheetDesc = localStorage.getItem(sheetDescId)
+       console.log(sheetDesc)
 
     // GET IMAGE
       const sheetImgId = "image" + prodId;
@@ -164,14 +164,13 @@
       document.getElementById('sheet-title').innerHTML = sheetTitle
 
     // SET DESCRIPTION
-//       document.getElementById('sheet-desc').innerHTML = sheetDesc
+       document.getElementById('sheet-desc').innerHTML = sheetDesc
 
     // SET IMAGE
       document.getElementById('sheet-image').src = sheetImg
 
     // SET PRICE
       if (sheetPrice === "$0.00") {
-//         sheetPrice = "PLEASE INQUIRE"
         document.getElementById('sheet-price').innerHTML = "PLEASE INQUIRE FOR PRICING"
       } else {
         document.getElementById('sheet-price').innerHTML = sheetPrice}
@@ -202,20 +201,13 @@
     }
   }  
 
-//     window.onload = printTearSheet();
   docReady(printTearSheet())
   
   function docReady(e) {
-      // see if DOM is already available
-//       if (document.readyState === "complete") {
-//           // call on next available tick
-//           setTimeout(e, 10000);
-//       } 
-//     else {
+
     setTimeout(function () {
           document.addEventListener("DOMContentLoaded", e);
     },500);
-//       }
   }  
   
   
