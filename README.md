@@ -1,2 +1,2 @@
-# shopify-tear-sheet
-Add a Tear Sheet button to your Shopify page's Template written in Liquid code.
+# Shopify // Tear Sheet Button
+Add a Tear Sheet button that prints only the relevant content of a product to your Shopify page's Template. Written in Liquid code. More instructions soon ;)
